@@ -10,7 +10,7 @@ const props = {
 const Title = (props) => {
     return(
         <View>
-            <Text style={{'font-weight': props.bold?'700':'400', color: props.color, size: '45px' }}>{props.text}</Text>
+            <Text style={{fontWeight: props.bold?'700':'400', color: props.color, fontSize: '45px' }}>{props.text}</Text>
         </View>
     )
 }

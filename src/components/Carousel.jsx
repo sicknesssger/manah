@@ -36,8 +36,8 @@ const Carousel = () => {
     }).current;
   
     return (
-      <View style={{display: 'grid'}}>
-        <FlatList style={{width: '400px', 'justify-self': 'center' }}
+      <View style={{display: 'grid', marginBottom: '60px'}}>
+        <FlatList style={{width: '400px', justifySelf: 'center' }}
           data={Slides}
           renderItem={({item}) => <SlideItem item={item} />}
           horizontal
