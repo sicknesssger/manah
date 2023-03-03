@@ -1,13 +1,16 @@
 import { View, TouchableWithoutFeedback, Alert } from "react-native";
+import Carousel from "./Carousel";
+import Title from "./title/Title";
 
 const PageOne = () => {
     return(
         <View>
-            <TouchableWithoutFeedback onPress={()=> Alert.alert('hemos presionado el texto')}>
-                    <View>
-                        <image></image>
-                    </View>
-            </TouchableWithoutFeedback>
+            <Carousel></Carousel>
+            <div>
+                <Title text={'Breve historia'} color={'#000'} bold={false}></Title>
+                <p></p>
+                <image></image>
+            </div>
         </View>
     )
 }
